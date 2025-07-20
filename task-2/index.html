@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tour Guide</title>
+    <link rel="stylesheet" href="index.css" />
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById("navLinks");
+            nav.classList.toggle("active");
+        }
+    </script>
+</head>
+
+<body>
+    <section class="hero">
+        <!-- Background Image Overlay -->
+        <div class="overlay"></div>
+
+        <!-- Main Wrapper -->
+        <div class="main-content">
+
+            <!-- Navbar -->
+            <nav>
+                <div class="logo">tour guide</div>
+                <div class="hamburger" onclick="toggleMenu()">☰</div>
+                <div id="navLinks" class="nav-links">
+                    <a href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="tour.html">Popular Destinations</a>
+                    <a href="#">Our Packages</a>
+                    <a href="#">Help</a>
+                    <a href="signin.html" class="sign-in">Profile</a>
+                </div>
+            </nav>
+
+            <!-- Hero Section -->
+            <div class="hero-content">
+                <h1>We Find The Best Tours For You</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In repellat, itaque cum eveniet adipisci.
+                </p>
+                <div class="video-button">
+                    <div class="circle">▶</div>
+                    <span>Watch Video</span>
+                </div>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <input type="text" placeholder="Search For A Destination" />
+                <input type="text" placeholder="Guests" />
+                <input type="date" />
+                <button>Search</button>
+            </div>
+    </section>
+
+    <section class="city-explorer">
+        <div class="title-section">
+            <h2>Explore Popular Cities</h2>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                Velit officia consequat duis enim velit mollit</p>
+        </div>
+
+        <div class="city-tabs">
+            <button>New York</button>
+            <button>California</button>
+            <button >Alaska</button>
+            <button>Sidney</button>
+            <button>Dubai</button>
+            <button class="active"><a href="citylisting.html">London</a></button>
+            <button>Tokyo</button>
+            <button>Delhi</button>
+        </div>
+
+        <div class="city-display">
+            <img src="mountain.png" alt="Alaska Mountains" class="main-image" />
+
+            <div class="city-description">
+                <div class="text">
+                    <h3>Alaska</h3>
+                    <p>
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                        Velit officia consequat duis enim velit mollit. Exercitation veniam
+                        consequat sunt nostrud amet.
+                    </p>
+                </div>
+                <div class="tags">
+                    <span class="tag purple">🚍 Public Transportations</span>
+                    <span class="tag green">🌲 Nature & Adventure</span>
+                    <span class="tag yellow">🚖 Private Transportations</span>
+                    <span class="tag red">💼 Business Tours</span>
+                    <span class="tag blue">📍 Local Visit</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="featured-destination">
+            <div class="image-blob">
+                <img src="eclipse.png" alt="Alaska Scenery" />
+            </div>
+            <div class="destination-content">
+                <span class="tag">TRENDING NOW</span>
+                <h2>Wilderlife of Alaska</h2>
+                <p class="location">
+                    <i class="fa fa-map-marker-alt"></i> Alaska, USA
+                    <span class="stars">⭐ 4.9 (300 reviews)</span>
+                </p>
+                <p class="desc">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                    Velit officia consequat duis enim velit mollit. Exercitation veniam
+                    consequat sunt nostrud amet.
+                </p>
+                <div class="buttons">
+                    <button class="book">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="featured-destinations">
+        <h1>Featured Destinations</h1>
+        <div class="subtitle">
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
+            <p>Velit officia
+                consequat duis enim velit mollit.</p>
+        </div>
+
+        <div class="carousel-controls">
+            <button class="prev">◄</button>
+            <button class="next">►</button>
+        </div>
+
+        <div class="carousel">
+            <div class="destination-card">
+                <img src="image1.png" alt="Westminster to Greenwich River Thames">
+                <h3>Westminster to Greenwich River Thames</h3>
+                <ul>
+                    <li><span class="icon">⏱️</span> Duration 2 hours</li>
+                    <li><span class="icon">🚍</span> Transport Facility</li>
+                    <li><span class="icon">👨‍👩‍👧</span> Family Plan</li>
+                </ul>
+                <div class="rating">★★★★★ <span>584 reviews</span></div>
+                <div class="price">$35.00 per person</div>
+            </div>
+            <div class="destination-card">
+                <img src="image2.png" alt="Vintage Double Decker Bus Tour & Thames">
+                <h3>Vintage Double Decker Bus Tour & Thames</h3>
+                <ul>
+                    <li><span class="icon">⏱️</span> Duration 2 hours</li>
+                    <li><span class="icon">🚍</span> Transport Facility</li>
+                    <li><span class="icon">👨‍👩‍👧</span> Family Plan</li>
+                </ul>
+                <div class="rating">★★★★★ <span>584 reviews</span></div>
+                <div class="price">$35.00 per person</div>
+            </div>
+            <div class="destination-card">
+                <img src="image3.png" alt="Magic of London Tour with Afternoon Tea">
+                <h3>Magic of London Tour with Afternoon Tea</h3>
+                <ul>
+                    <li><span class="icon">⏱️</span> Duration 2 hours</li>
+                    <li><span class="icon">🚍</span> Transport Facility</li>
+                    <li><span class="icon">👨‍👩‍👧</span> Family Plan</li>
+                </ul>
+                <div class="rating">★★★★★ <span>584 reviews</span></div>
+                <div class="price">$35.00 per person</div>
+            </div>
+            <div class="destination-card">
+                <img src="image4.png" alt="Magic of London Tour with Afternoon Tea">
+                <h3>Magic of London Tour with Afternoon Tea</h3>
+                <ul>
+                    <li><span class="icon">⏱️</span> Duration 2 hours</li>
+                    <li><span class="icon">🚍</span> Transport Facility</li>
+                    <li><span class="icon">👨‍👩‍👧</span> Family Plan</li>
+                </ul>
+                <div class="rating">★★★★★ <span>584 reviews</span></div>
+                <div class="price">$35.00 per person</div>
+            </div>
+            <div class="destination-card">
+                <img src="image2.png" alt="Westminster to Greenwich River Thames">
+                <h3>Westminster to Greenwich River Thames</h3>
+                <ul>
+                    <li><span class="icon">⏱️</span> Duration 2 hours</li>
+                    <li><span class="icon">🚍</span> Transport Facility</li>
+                    <li><span class="icon">👨‍👩‍👧</span> Family Plan</li>
+                </ul>
+                <div class="rating">★★★★★ <span>584 reviews</span></div>
+                <div class="price">$35.00 per person</div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <header class="gallery-header">
+            <div class="gallery-info">
+                <h1 class="gallery-title">From The Gallery</h1>
+                <p class="gallery-description">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit
+                </p>
+            </div>
+            <button class="view-all-btn">View All Images</button>
+        </header>
+
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="gallery1.png" alt="Forest path with golden sunlight">
+            </div>
+            <div class="gallery-item">
+                <img src="gallery2.png" alt="Mountain lake with clear blue water">
+            </div>
+            <div class="gallery-item">
+                <img src="gallery3.png" alt="Misty mountain peaks">
+            </div>
+            <div class="gallery-item">
+                <img src="gallery4.png" alt="Rolling green hills">
+            </div>
+            <div class="gallery-item">
+                <img src="gallery5.png" alt="Forest river reflection">
+            </div>
+            <div class="gallery-item">
+                <img src="gallery6.png" alt="Wooden dock on lake">
+        </div>
+        <div class="gallery-item">
+                <img src="gallery6.png" alt="Wooden dock on lake">
+        </div>
+        <div class="gallery-item">
+                <img src="gallery6.png" alt="Wooden dock on lake">
+        </div>
+    </div>
+
+    <div class="stories-wrapper">
+        <header class="stories-header">
+            <div class="header-content">
+                <h1 class="stories-title">Latest Stories</h1>
+                <p class="stories-description">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                    sint. Velit officia consequat duis enim velit mollit
+                </p>
+            </div>
+            <button class="posts-btn" id="viewAllBtn">View All Posts</button>
+        </header>
+
+        <div class="stories-grid" id="storiesGrid">
+            <article class="story-card">
+                <div class="card-image">
+                    <img src="person1.png" alt="Medical professional">
+                </div>
+                <div class="card-content">
+                    <div class="author-info">
+                        <div class="author-avatar">
+                            <img src="person.png" alt="Jackie Moncada">
+                        </div>
+                        <span class="author-name">Jackie Moncada</span>
+                    </div>
+                    <h3 class="story-headline">7 Signs and Symptoms of Iodine Deficiency</h3>
+                </div>
+            </article>
+
+            <article class="story-card">
+                <div class="card-image">
+                    <img src="equipment.png" alt="Sleep and wellness setup">
+                </div>
+                <div class="card-content">
+                    <div class="author-info">
+                        <div class="author-avatar">
+                            <img src="person.png" alt="Jackie Moncada">
+                        </div>
+                        <span class="author-name">Jackie Moncada</span>
+                    </div>
+                    <h3 class="story-headline">How to Fix Your Sleep Schedule: 7 Easy Ways</h3>
+                </div>
+            </article>
+
+            <article class="story-card mobile-hidden">
+                <div class="card-image">
+                    <img src="equpment1.png" alt="Cinnamon and spices">
+                </div>
+                <div class="card-content">
+                    <div class="author-info">
+                        <div class="author-avatar">
+                            <img src="person.png" alt="Jackie Moncada">
+                        </div>
+                        <span class="author-name">Jackie Moncada</span>
+                    </div>
+                    <h3 class="story-headline">10 Proven Health Benefits of Cinnamon</h3>
+                </div>
+            </article>
+
+            <article class="story-card mobile-hidden">
+                <div class="card-image">
+                    <img src="organ.png" alt="Turmeric and curcumin">
+                </div>
+                <div class="card-content">
+                    <div class="author-info">
+                        <div class="author-avatar">
+                            <img src="person.png" alt="Jackie Moncada">
+                        </div>
+                        <span class="author-name">Jackie Moncada</span>
+                    </div>
+                    <h3 class="story-headline">11 Health Benefits of Turmeric and Curcumin</h3>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('viewAllBtn').addEventListener('click', function() {
+            const hiddenPosts = document.querySelectorAll('.mobile-hidden');
+            const btn = this;
+            
+            if (btn.textContent === 'View All Posts') {
+                hiddenPosts.forEach(post => {
+                    post.classList.remove('mobile-hidden');
+                });
+                btn.textContent = 'Show Less';
+            } else {
+                hiddenPosts.forEach(post => {
+                    post.classList.add('mobile-hidden');
+                });
+                btn.textContent = 'View All Posts';
+            }
+        });
+    </script>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Language & Currency Section -->
+            <div class="footer-section">
+                <h3>Language</h3>
+                <div class="language-currency">
+                    <div class="select-wrapper">
+                        <select>
+                            <option value="en-uk">🇬🇧 English (UK)</option>
+                            <option value="en-us">🇺🇸 English (US)</option>
+                            <option value="es">🇪🇸 Español</option>
+                            <option value="fr">🇫🇷 Français</option>
+                            <option value="de">🇩🇪 Deutsch</option>
+                        </select>
+                    </div>
+                    
+                    <h3 style="margin-bottom: 10px; margin-top: 10px;">Currency</h3>
+                    <div class="select-wrapper">
+                        <select>
+                            <option value="usd">U.S. Dollar ($)</option>
+                            <option value="eur">Euro (€)</option>
+                            <option value="gbp">British Pound (£)</option>
+                            <option value="cad">Canadian Dollar (C$)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Company Section -->
+            <div class="footer-section">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#press">Press Room</a></li>
+                    <li><a href="#careers">Careers</a></li>
+                </ul>
+            </div>
+
+            <!-- Help Section -->
+            <div class="footer-section">
+                <h3>Help</h3>
+                <ul>
+                    <li><a href="#contact">Contact us</a></li>
+                    <li><a href="#faq">FAQs</a></li>
+                    <li><a href="#terms">Terms and conditions</a></li>
+                    <li><a href="#privacy">Privacy policy</a></li>
+                    <li><a href="#sitemap">Sitemap</a></li>
+                </ul>
+            </div>
+
+            <!-- Payment & Company Info Section -->
+            <div class="footer-section">
+                <h3>Payment methods possible</h3>
+                <div class="payment-methods">
+                    <div class="payment-icon mastercard">MC</div>
+                    <div class="payment-icon discover">DISC</div>
+                    <div class="payment-icon visa">VISA</div>
+                    <div class="payment-icon amex">AMEX</div>
+                    <div class="payment-icon bitcoin">₿</div>
+                    <div class="payment-icon gpay">GPay</div>
+                    <div class="payment-icon apple-pay">🍎</div>
+                    <div class="payment-icon paypal">PP</div>
+                    <div class="payment-icon maestro">MC</div>
+                </div>
+                
+                <div class="company-info" style="margin-top: 25px;">
+                    <h3>Company</h3>
+                    <p>Become a Tour guide for Us</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="copyright">
+                Copyright 2021 Tour Guide. All Rights Reserved
+            </div>
+            <div class="social-links">
+                <a href="#" class="facebook"><img src="Group 90 (1).png" alt="facebook"></a>
+                <a href="#" class="twitter"><img src="Vector.png" alt="instagram"></a>
+                <a href="#" class="instagram"><img src="Group 87.png" alt="twitter"></a>
+                <a href="#" class="pinterest"><img src="Group 89.png" alt="pintrest"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
