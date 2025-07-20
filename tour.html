@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Guide - Vintage Double Decker Bus Tour</title>
+    <link rel="stylesheet" href="tour.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h2>tour guide</h2>
+            </div>
+            <nav class="nav">
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="#" class="nav-link">About Us</a>
+                    <a href="#" class="nav-link">Popular Destinations</a>
+                    <a href="#" class="nav-link">Our Packages</a>
+                    <a href="#" class="nav-link">Help</a>
+                    <button class="sign-in-btn">Sign In</button>
+                </div>
+                <button class="menu-toggle" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="content-wrapper">
+                <div class="tour-details">
+                    <div class="tour-header">
+                        <h1>Vintage Double Decker Bus Tour & Thames River Cruise</h1>
+                        <div class="tour-info">
+                            <span class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Gothenburg
+                            </span>
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="review-count">(348 reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="image-gallery">
+                        <div class="main-image">
+                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="Mountain landscape">
+                        </div>
+                        <div class="thumbnail-grid">
+                            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Forest path">
+                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Mountains">
+                            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Nature">
+                            <img src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Lake">
+                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Mountain path">
+                            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Sunrise">
+                        </div>
+                    </div>
+
+                    <div class="features-grid">
+                        <div class="feature">
+                            <i class="fas fa-times-circle"></i>
+                            <div class="feature-content">
+                                <h4>Free Cancellation</h4>
+                                <p>Cancel up to 24 hours in advance to receive a full refund</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <div class="feature-content">
+                                <h4>Health Precautions</h4>
+                                <p>Special health and safety measures apply. Learn more</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature">
+                            <i class="fas fa-mobile-alt"></i>
+                            <div class="feature-content">
+                                <h4>Mobile Ticketing</h4>
+                                <p>Use your phone or print your voucher</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <div class="feature-content">
+                                <h4>Duration 3.5 Hours</h4>
+                                <p>Check availability to see starting times.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <div class="feature-content">
+                                <h4>Instant Confirmation</h4>
+                                <p>Don't wait for the confirmation!</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature">
+                            <i class="fas fa-user"></i>
+                            <div class="feature-content">
+                                <h4>Live Tour Guide In English</h4>
+                                <p>English</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="booking-sidebar">
+                    <div class="booking-card">
+                        <h3>Booking</h3>
+                        
+                        <div class="form-group">
+                            <label for="from-date">From</label>
+                            <input type="date" id="from-date" value="2021-12-10">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="to-date">To</label>
+                            <input type="date" id="to-date" value="2021-12-10">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="guests">No. Of Guest</label>
+                            <select id="guests">
+                                <option value="2">2 adults</option>
+                                <option value="1">1 adult</option>
+                                <option value="3">3 adults</option>
+                                <option value="4">4 adults</option>
+                            </select>
+                        </div>
+                        
+                        <div class="price-section">
+                            <div class="subtotal">Subtotal</div>
+                            <div class="price">$78.90</div>
+                        </div>
+                        
+                        <button class="confirm-btn">Confirm Booking</button>
+                        
+                        <div class="action-buttons">
+                            <button class="wishlist-btn">
+                                <i class="far fa-heart"></i>
+                                Save To Wishlist
+                            </button>
+                            <button class="share-btn">
+                                <i class="fas fa-share"></i>
+                                Share The Activity
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            const menuToggle = document.querySelector('.menu-toggle');
+            
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        }
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-link, .sign-in-btn').forEach(link => {
+            link.addEventListener('click', () => {
+                const navLinks = document.querySelector('.nav-links');
+                const menuToggle = document.querySelector('.menu-toggle');
+                
+                navLinks.classList.remove('active');
+                menuToggle.classList.remove('active');
+            });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            const nav = document.querySelector('.nav');
+            const navLinks = document.querySelector('.nav-links');
+            const menuToggle = document.querySelector('.menu-toggle');
+            
+            if (!nav.contains(e.target)) {
+                navLinks.classList.remove('active');
+                menuToggle.classList.remove('active');
+            }
+        });
+    </script>
+
+ <div class="container1">
+        <div class="section">
+            <h2>Description</h2>
+            <p>See the highlights of London via 2 classic modes of transport on this half-day adventure. First, you will enjoy great views of Westminster Abbey, the Houses of Parliament, and the London Eye, as you meander through the historic streets on board a vintage double decker bus.</p>
+            
+            <p>Continue to see St. Paul's Cathedral, Sir Christopher Wren's architectural masterpiece, where Admirals Nelson and Wellington are buried, and Princess Diana and Prince Charles got married. Continue to the Tower of London, built nearly 1,000 years ago during the reign of William the Conqueror.</p>
+            
+            <p>Home to the Crown Jewels, the Tower is protected by the famous Beefeaters, and the imposing palace has been used as a fortress and a prison throughout its history. Your guide will take you to Traitors Gate, where prisoners entered the Tower for the first time.</p>
+            
+            <p>You'll take a short trip along the River Thames, passing Shakespeare's Globe, Cleopatra's Needle, and London Bridge, before arriving at Westminster Pier. Begin the boat head for Buckingham Palace. Make your way to the perfect spot to watch the world-famous Changing of the Guard ceremony as the soldiers dressed in their fabulous tunics and busbies, march to military music.</p>
+        </div>
+
+        <div class="section">
+            <h2>Activity</h2>
+            <h3>What You Will Do</h3>
+            <ul>
+                <li>Discover London on board a classic Routemaster vintage double decker bus</li>
+                <li>Cruise down the River Thames</li>
+                <li>See the Changing of the Guard</li>
+                <li>Go to Westminster Abbey</li>
+                <li>Listen to the chimes of Big Ben and see the Houses of Parliament</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>What Is Included / Not Included</h2>
+            <div class="included-grid">
+                <div class="includes">
+                    <h3>Includes</h3>
+                    <ul>
+                        <li>Double-decker Routemaster tour</li>
+                        <li>Short trip along the River Thames</li>
+                        <li>Changing of the Guard</li>
+                        <li>Gratuities</li>
+                    </ul>
+                </div>
+                <div class="not-includes">
+                    <h3>Not Includes</h3>
+                    <ul>
+                        <li>Double-decker Routemaster tour</li>
+                        <li>Short trip along the River Thames</li>
+                        <li>Changing of the Guard</li>
+                        <li>Gratuities</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Safety</h2>
+            <h3>Health Precautions</h3>
+            <ul>
+                <li>All required protective equipment is provided</li>
+                <li>All areas that customers touch are frequently cleaned</li>
+                <li>You must keep social distance while in vehicles</li>
+                <li>The number of visitors is limited to reduce crowds</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Details</h2>
+            <div class="details-grid">
+                <div class="detail-item">
+                    <h4>Language</h4>
+                    <ul>
+                        <li>English</li>
+                        <li>French</li>
+                    </ul>
+                </div>
+                <div class="detail-item">
+                    <h4>Duration</h4>
+                    <ul>
+                        <li>3.5 hours</li>
+                    </ul>
+                </div>
+                <div class="detail-item">
+                    <h4>Number Of People</h4>
+                    <ul>
+                        <li>8 People</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <h3>Meeting Point Address</h3>
+            <p>Meet your guide outside the west entrance of Aldis Ali Park (Whitechapel Road). It's opposite the entrance to Aldgate East Tube Station and the Whitechapel Gallery. Look for a guide wearing SMT attire and holding a red SMT flag.</p>
+        </div>
+    </div>
+
+<div class="container">
+        <!-- Related Tours In Today Section -->
+        <section class="tours-section">
+            <div class="section-header">
+                <h2>Related Tours In Today</h2>
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev" onclick="moveCarousel('today', -1)">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-btn next" onclick="moveCarousel('today', 1)">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="carousel-container" id="today-carousel">
+                <div class="tours-grid">
+                    <div class="tour-card">
+                        <div class="tour-image">
+                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Alaska Mountains">
+                        </div>
+                        <div class="tour-content">
+                            <h3>Alaska: Westminster to Greenwich River Thames</h3>
+                            <div class="tour-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Duration 2 hours</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-bus"></i>
+                                    <span>Transport Facility</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>Family Plan</span>
+                                </div>
+                            </div>
+                            <div class="tour-footer">
+                                <div class="rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <span class="review-count">584 reviews</span>
+                                </div>
+                                <div class="price">
+                                    <span class="amount">$35.00</span>
+                                    <span class="per-person">per person</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tour-card">
+                        <div class="tour-image">
+                            <img src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Northern Lights">
+                        </div>
+                        <div class="tour-content">
+                            <h3>Alaska: Vintage Double Decker Bus Tour & Thames</h3>
+                            <div class="tour-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Duration 2 hours</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-bus"></i>
+                                    <span>Transport Facility</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>Family Plan</span>
+                                </div>
+                            </div>
+                            <div class="tour-footer">
+                                <div class="rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <span class="review-count">584 reviews</span>
+                                </div>
+                                <div class="price">
+                                    <span class="amount">$35.00</span>
+                                    <span class="per-person">per person</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tour-card">
+                        <div class="tour-image">
+                            <img src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Mountain Lake">
+                        </div>
+                        <div class="tour-content">
+                            <h3>Alaska: Magic of London Tour with Afternoon Tea at</h3>
+                            <div class="tour-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Duration 2 hours</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-bus"></i>
+                                    <span>Transport Facility</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>Family Plan</span>
+                                </div>
+                            </div>
+                            <div class="tour-footer">
+                                <div class="rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <span class="review-count">584 reviews</span>
+                                </div>
+                                <div class="price">
+                                    <span class="amount">$35.00</span>
+                                    <span class="per-person">per person</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tour-card">
+                        <div class="tour-image">
+                            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Forest Landscape">
+                        </div>
+                        <div class="tour-content">
+                            <h3>Alaska: Magic of London Tour with Afternoon Tea at</h3>
+                            <div class="tour-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Duration 2 hours</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-bus"></i>
+                                    <span>Transport Facility</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>Family Plan</span>
+                                </div>
+                            </div>
+                            <div class="tour-footer">
+                                <div class="rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <span class="review-count">584 reviews</span>
+                                </div>
+                                <div class="price">
+                                    <span class="amount">$35.00</span>
+                                    <span class="per-person">per person</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related Tours In London Section -->
+        <section class="tours-section">
+            <div class="section-header">
+                <h2>Related Tours In London</h2>
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev" onclick="moveCarousel('london', -1)">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-btn next" onclick="moveCarousel('london', 1)">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="carousel-container" id="london-carousel">
+                <div class="tours-grid">
+                    <div class="tour-card">
+                        <div class="tour-image">
+                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Alaska Mountains">
+                        </div>
+                        <div class="tour-content">
+                            <h3>Alaska: Westminster to Greenwich River Thames</h3>
+                            <div class="tour-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Duration 2 hours</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-bus"></i>
+                                    <span>Transport Facility</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>Family Plan</span>
+                                </div>
+                            </div>
+                            <div class="tour-footer">
+                                <div class="rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <span class="review-count">584 reviews</span>
+                                </div>
+                                <div class="price">
+                                    <span class="amount">$35.00</span>
+                                    <span class="per-person">per person</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tour-card">
+                        <div class="tour-image">
+                            <img src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Northern Lights">
+                        </div>
+                        <div class="tour-content">
+                            <h3>Alaska: Vintage Double Decker Bus Tour & Thames</h3>
+                            <div class="tour-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Duration 2 hours</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-bus"></i>
+                                    <span>Transport Facility</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>Family Plan</span>
+                                </div>
+                            </div>
+                            <div class="tour-footer">
+                                <div class="rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <span class="review-count">584 reviews</span>
+                                </div>
+                                <div class="price">
+                                    <span class="amount">$35.00</span>
+                                    <span class="per-person">per person</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tour-card">
+                        <div class="tour-image">
+                            <img src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Mountain Lake">
+                        </div>
+                        <div class="tour-content">
+                            <h3>Alaska: Magic of London Tour with Afternoon Tea at</h3>
+                            <div class="tour-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Duration 2 hours</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-bus"></i>
+                                    <span>Transport Facility</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>Family Plan</span>
+                                </div>
+                            </div>
+                            <div class="tour-footer">
+                                <div class="rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <span class="review-count">584 reviews</span>
+                                </div>
+                                <div class="price">
+                                    <span class="amount">$35.00</span>
+                                    <span class="per-person">per person</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tour-card">
+                        <div class="tour-image">
+                            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Forest Landscape">
+                        </div>
+                        <div class="tour-content">
+                            <h3>Alaska: Magic of London Tour with Afternoon Tea at</h3>
+                            <div class="tour-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Duration 2 hours</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-bus"></i>
+                                    <span>Transport Facility</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>Family Plan</span>
+                                </div>
+                            </div>
+                            <div class="tour-footer">
+                                <div class="rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <span class="review-count">584 reviews</span>
+                                </div>
+                                <div class="price">
+                                    <span class="amount">$35.00</span>
+                                    <span class="per-person">per person</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        let currentSlide = {
+            today: 0,
+            london: 0
+        };
+
+        function moveCarousel(section, direction) {
+            const carousel = document.getElementById(`${section}-carousel`);
+            const grid = carousel.querySelector('.tours-grid');
+            const cards = grid.querySelectorAll('.tour-card');
+            const cardWidth = cards[0].offsetWidth + 20; // card width + gap
+            const visibleCards = Math.floor(carousel.offsetWidth / cardWidth);
+            const maxSlide = Math.max(0, cards.length - visibleCards);
+
+            currentSlide[section] += direction;
+
+            if (currentSlide[section] < 0) {
+                currentSlide[section] = 0;
+            } else if (currentSlide[section] > maxSlide) {
+                currentSlide[section] = maxSlide;
+            }
+
+            const translateX = -currentSlide[section] * cardWidth;
+            grid.style.transform = `translateX(${translateX}px)`;
+
+            // Update button states
+            updateButtonStates(section, maxSlide);
+        }
+
+        function updateButtonStates(section, maxSlide) {
+            const sectionElement = document.querySelector(`#${section}-carousel`).closest('.tours-section');
+            const prevBtn = sectionElement.querySelector('.prev');
+            const nextBtn = sectionElement.querySelector('.next');
+
+            prevBtn.disabled = currentSlide[section] === 0;
+            nextBtn.disabled = currentSlide[section] === maxSlide;
+        }
+
+        // Initialize button states
+        window.addEventListener('load', () => {
+            ['today', 'london'].forEach(section => {
+                const carousel = document.getElementById(`${section}-carousel`);
+                const grid = carousel.querySelector('.tours-grid');
+                const cards = grid.querySelectorAll('.tour-card');
+                const cardWidth = cards[0].offsetWidth + 20;
+                const visibleCards = Math.floor(carousel.offsetWidth / cardWidth);
+                const maxSlide = Math.max(0, cards.length - visibleCards);
+                updateButtonStates(section, maxSlide);
+            });
+        });
+
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            ['today', 'london'].forEach(section => {
+                currentSlide[section] = 0;
+                const carousel = document.getElementById(`${section}-carousel`);
+                const grid = carousel.querySelector('.tours-grid');
+                grid.style.transform = 'translateX(0px)';
+                
+                const cards = grid.querySelectorAll('.tour-card');
+                const cardWidth = cards[0].offsetWidth + 20;
+                const visibleCards = Math.floor(carousel.offsetWidth / cardWidth);
+                const maxSlide = Math.max(0, cards.length - visibleCards);
+                updateButtonStates(section, maxSlide);
+            });
+        });
+    </script>
+
+     <footer class="footer">
+        <div class="footer-container">
+            <!-- Language & Currency Section -->
+            <div class="footer-section">
+                <h3>Language</h3>
+                <div class="language-currency">
+                    <div class="select-wrapper">
+                        <select>
+                            <option value="en-uk">🇬🇧 English (UK)</option>
+                            <option value="en-us">🇺🇸 English (US)</option>
+                            <option value="es">🇪🇸 Español</option>
+                            <option value="fr">🇫🇷 Français</option>
+                            <option value="de">🇩🇪 Deutsch</option>
+                        </select>
+                    </div>
+                    
+                    <h3 style="margin-bottom: 10px; margin-top: 10px;">Currency</h3>
+                    <div class="select-wrapper">
+                        <select>
+                            <option value="usd">U.S. Dollar ($)</option>
+                            <option value="eur">Euro (€)</option>
+                            <option value="gbp">British Pound (£)</option>
+                            <option value="cad">Canadian Dollar (C$)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Company Section -->
+            <div class="footer-section">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#press">Press Room</a></li>
+                    <li><a href="#careers">Careers</a></li>
+                </ul>
+            </div>
+
+            <!-- Help Section -->
+            <div class="footer-section">
+                <h3>Help</h3>
+                <ul>
+                    <li><a href="#contact">Contact us</a></li>
+                    <li><a href="#faq">FAQs</a></li>
+                    <li><a href="#terms">Terms and conditions</a></li>
+                    <li><a href="#privacy">Privacy policy</a></li>
+                    <li><a href="#sitemap">Sitemap</a></li>
+                </ul>
+            </div>
+
+            <!-- Payment & Company Info Section -->
+            <div class="footer-section">
+                <h3>Payment methods possible</h3>
+                <div class="payment-methods">
+                    <div class="payment-icon mastercard">MC</div>
+                    <div class="payment-icon discover">DISC</div>
+                    <div class="payment-icon visa">VISA</div>
+                    <div class="payment-icon amex">AMEX</div>
+                    <div class="payment-icon bitcoin">₿</div>
+                    <div class="payment-icon gpay">GPay</div>
+                    <div class="payment-icon apple-pay">🍎</div>
+                    <div class="payment-icon paypal">PP</div>
+                    <div class="payment-icon maestro">MC</div>
+                </div>
+                
+                <div class="company-info" style="margin-top: 25px;">
+                    <h3>Company</h3>
+                    <p>Become a Tour guide for Us</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="copyright">
+                Copyright 2021 Tour Guide. All Rights Reserved
+            </div>
+            <div class="social-links">
+                <a href="#" class="facebook"><img src="Group 90 (1).png" alt="facebook"></a>
+                <a href="#" class="twitter"><img src="Vector.png" alt="instagram"></a>
+                <a href="#" class="instagram"><img src="Group 87.png" alt="twitter"></a>
+                <a href="#" class="pinterest"><img src="Group 89.png" alt="pintrest"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
